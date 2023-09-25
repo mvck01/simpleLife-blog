@@ -1,0 +1,293 @@
+/* *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+} */
+.mainContainer{
+    /* border: 1px solid blue; */
+    font-family: 'Ubuntu', sans-serif;
+    width: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    margin: 0 auto;
+    line-height: 1.5em;
+    /* width: 1920px;
+    max-width: 100%; */
+    
+}
+img{
+    display: block;
+    width: 100%;
+}
+footer{
+    /* border: 1px solid blue; */
+    background: #143774;
+    font-family: 'Ubuntu', sans-serif;
+    width: 83%;
+    margin: 0 auto;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    line-height: 1.5em;
+    /* width: 1920px;
+    max-width: 100%; */ 
+}
+.container{
+    /* border: 1px solid black; */
+    line-height: 1.5em;
+    margin: 2em auto 0 auto;
+    display: flex;
+    justify-content: space-around;
+    background: whitesmoke;
+    text-align: center;
+    height: 265px;
+    width: 90%;
+    /* padding-top: 6.5em; */
+    
+}
+.mainHead{
+    color: #143774;
+    font-family: 'Lora', sans-serif;
+    font-size: 2rem;
+}
+.inner-text{
+    color: #1792D2;
+}
+.subHead{
+    font-family: 'Ubuntu', sans-serif;
+    text-transform: uppercase;
+    font-size: .75rem;
+    color: #1792D2;
+    text-align: left;
+}
+
+
+main{
+    max-width: 65%;
+}
+aside{
+    max-width: 25%;
+}
+
+/* Article Section */
+
+.article-title{
+    /* order: 1; */
+    font-family:'Lora', sans-serif;
+    font-size: 1.5rem;
+    color:#143774;
+    font-weight: 500;
+}
+.article-image{
+    margin-top: 2em;
+    order: -2;
+}
+.article-info{
+    order: -1;
+}
+.article-body{
+    font-family:'Ubuntu', sans-serif;
+    font-size: 1.125rem;
+}
+
+.article-info{
+    font-family:'Ubuntu', sans-serif;
+    font-size: 0.875rem;
+    font-weight: lighter;
+}
+
+.article-featured{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid black;
+    padding: .5em 0;
+}
+.article-recent{
+    padding: 1em 0;
+}
+
+.article-read-more{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    color: #1792D2;
+    font-weight: bold;
+}
+.article-read-more:hover, .article-read-more:focus{
+    color: #143774;
+}
+
+
+.article-recent{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-betweenx;
+}
+.article-recent-secondary{
+    padding-right: 1em;
+}
+
+/* End of Article Section */
+
+/* About me Article Section */
+.article-about-header{
+    font-family:'Lora', sans-serif;
+    color: #1792D2;
+}
+
+.article-text{
+    padding: .2em 0;
+}
+
+.about-img{
+    margin-bottom: 1em;
+}
+
+/* End of About me Article Section */
+
+/* RecentPosts section */
+
+
+/* End of Recent Posts Section */
+
+/* Widget Starts */
+.sidebar{
+    margin-top: 2.5em 
+}
+.sidebar-widget{
+    border: 20px solid #efefef;
+    padding:1em;
+    margin-bottom: 1.5em;
+}
+.stop{
+    margin-top: 2em;
+}
+
+.widget-header{
+    text-transform: uppercase;
+    color:#143774;
+}
+.widget-body{
+    color: #143774;
+}
+.widget-recent-post-link{
+    text-decoration: none;
+    color: #143774;
+}
+.widget-recent-posts-title{
+    font-family:'Lora', sans-serif;
+    font-size: 1.2rem;
+    color:#143774;
+    font-weight: 500;
+}
+.widget-recent-posts{
+    margin-bottom:1em;
+    border-bottom: 1px solid black;
+    display: flex;
+    flex-direction: column;
+}
+.widget-recent-posts-title{
+    order: -1;
+}
+.widget-image{
+    order: -2;
+}
+.widget-recent-posts:last-child{
+    border: none    ;
+}
+/* Widget Ends */
+
+
+/* Navigation starts */
+nav ul{
+    display: flex;
+
+}
+nav a{
+    text-decoration: none;
+    color: #000000;
+}
+nav li{
+    list-style-type: none;
+    border-bottom: 1px solid black;
+    padding: .5rem 0;
+    margin: 0 .5em 0 .5em;
+    text-transform: uppercase;
+   
+}
+nav a:hover{
+    color: #1792D2; 
+}
+nav .a-1:hover{
+    color: #000000;
+}
+nav .a-2:hover{
+    color: #000000;
+}
+nav .a-3:hover{
+    color: #000000;
+}
+
+/* Navigation Ends */
+
+
+/* MediaQueries */
+
+
+@media(max-width:800px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .subHead{
+        text-align: center;
+        padding-top: .2em;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: column;
+       
+        margin: 0 auto;
+        padding: 0;
+        align-items: center;
+       
+    }
+    .mainContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    main{
+        max-width: 100%;
+    }
+    .article-recent{
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+
+    }
+    .article-recent-main{
+        order: 2;
+    }
+    .article-recent-secondary{
+        order: 1;
+    }
+    aside{
+        max-width: 100%;
+    }
+    .article-info{
+        text-align: right;
+    }
+    .article-title{
+        margin-top: -1.5em;
+    }
+    footer{
+        width: 85.5%;
+        margin: 0 auto;
+    }
+    
+}
+
+
+/* End media Point */
