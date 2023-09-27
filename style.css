@@ -276,7 +276,8 @@ nav .a-3:hover{
     aside{
         max-width: 100%;
     }
-    .article-info{
+   .article-info{
+        margin-bottom: 2.5rem;
         text-align: right;
     }
     .article-title{
